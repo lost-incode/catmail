@@ -10,5 +10,4 @@ node_modules/
 build/
 npm-debug.*
 Thumbs.db
-package-lock.json
 dist
