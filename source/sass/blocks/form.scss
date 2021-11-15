@@ -1,0 +1,117 @@
+.form__label {
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.form__textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 15px;
+  margin-bottom: 32px;
+  width: 335px;
+  height: 160px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__textarea::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: $basic-extra-light;
+}
+
+.form__container {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+}
+
+.form__contacts {
+  margin: 0;
+  margin-top: 22px;
+}
+
+.form__span {
+  display: block;
+  margin-top: 7px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-extra-light;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 98px;
+  }
+}
+
+.form__submit {
+  font-family: "PT Sans", "Arial", sans-serif;
+  position: relative;
+  display: block;
+  margin-top: 64px;
+  margin-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 10px;
+  padding-left: 27px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  line-height: 26px;
+  color: $basic-white;
+  background-color: $basic-blue;
+  border-radius: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin: 64px auto 60px auto;
+    width: 160px;
+  }
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active::before {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form__submit::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: $basic-white;
+  width: 18px;
+  height: 16px;
+  top: 15px;
+  left: 102px;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+  mask-image: url("../img/stack.svg#paw");
+
+  @media (min-width: $desktop-width) {
+    left: 15px;
+  }
+}

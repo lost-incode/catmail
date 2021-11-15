@@ -1,0 +1,50 @@
+.contacts {
+  font-family: "PT Sans", "Arial", sans-serif;
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.contacts__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 21px;
+  row-gap: 8px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    column-gap: 4px;
+    align-items: center;
+  }
+}
+
+.contacts__input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  min-height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 7px 11px;
+
+  &:hover {
+    border: 1px solid $basic-extra-light;
+  }
+
+  &:active {
+    border: 2px solid $blue-hover;
+  }
+}
+
+.contacts__input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  color: $basic-extra-light;
+}

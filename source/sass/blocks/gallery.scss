@@ -1,0 +1,48 @@
+.gallery {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.gallery__title {
+  font-size: 28px;
+  line-height: 36px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.gallery__img {
+  display: block;
+  border-radius: 4px;
+}
+
+.gallery__img--1 {
+  width: 335px;
+  height: 224px;
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.gallery__img--2 {
+  width: 335px;
+  height: 447px;
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.gallery__img--3 {
+  width: 335px;
+  height: 224px;
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 200px;
+  }
+}

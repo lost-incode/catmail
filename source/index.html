@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котопочта</title>
+    <link rel="preload" href="fonts/PT-Sans-Narrow-Regular .woff2" crossorigin type="font/woff2" as="font">
+    <link rel="preload" href="fonts/PT-Sans-Regular .woff2" crossorigin type="font/woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page__body">
+    <div class="page__container">
+      <header class="page-header">
+        <a href="#" class="page-header__logo">
+          Котопочта
+        </a>
+
+        <nav class="page-header__nav header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item"><a href="#">Забрать кота себе</a></li>
+            <li class="header-nav__item"><a href="#">Задонатить на корм</a></li>
+          </ul>
+          <a href="#" class="header-nav__button">Войти</a>
+        </nav>
+      </header>
+    </div>
+
+    <div class="page__container">
+      <main class="page-main">
+        <section class="info">
+          <div class="info__section">
+            <h2 class="info__title">Как это работает?</h2>
+            <p class="info__subtitle">
+              Наши коты любят, когда с ними разговаривают.&nbsp;Напишите письмо, и&nbsp;мы прочитаем его котам, когда они придут почесать&nbsp;пузо.
+            </p>
+          </div>
+          <div class="info__section">
+            <h2 class="info__title">Что передать котам?</h2>
+            <p class="info__subtitle">
+              Можно рассказать где вы видели вкусных мышей, какого размера синицы прилетели в город, или просто интересную историю из жизни.
+            </p>
+            <form action="#" method="GET" class="info__form form">
+              <label for="message" class="form__label">Сообщение</label>
+              <textarea class="form__textarea" name="message" id="message" cols="30" rows="10" placeholder="Что-нибудь хорошее"></textarea>
+            
+              <h2 class="form__label">Дополнительные опции</h2>
+              <ul class="form__container options">
+                <li class="options__item">
+                  <input type="checkbox" class="options__input visually-hidden" name="options" id="options-nouse">
+                  <label class="options__label" for="options-nouse">
+                    Сделать пуньк в нос
+                  </label>
+                </li>
+
+                <li class="options__item">
+                  <input type="checkbox" class="options__input visually-hidden" name="options" id="options-food">
+                  <label class="options__label" for="options-food">
+                    Угостить вкусняшкой
+                  </label>
+                </li>
+              </ul>
+
+              <h2 class="form__label">Контакты для связи</h2>
+              <ul class="form__contacts contacts">
+                <li class="contacts__item">
+                  <label class="contacts__label">
+                    Ваше имя
+                    <input type="text" class="contacts__input" name="contacts" id="name">
+                  </label>
+                </li>
+
+                <li class="contacts__item">
+                  <label class="contacts__label">
+                    Email
+                    <input type="email" class="contacts__input" name="contacts" id="email" placeholder="youremail@catmail.org">
+                  </label>
+                </li>
+              </ul>
+              <span class="form__span">Мы вышлем вам фото довольного кошачьего лица</span>
+
+              <button class="form__submit" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <h2 class="gallery__title">Довольные коты</h2>
+          <source media="(min-width: 1000px)" srcset="img/index/image-1-desktop.jpg">
+          <img src="img/index/image-1-mobile.jpg" alt="Белый кот" class="gallery__img gallery__img--1">
+
+          <source media="(min-width: 1000px)" srcset="img/index/image-2-desktop.jpg">
+          <img src="img/index/image-2-mobile.jpg" alt="Рыжий кот" class="gallery__img gallery__img--2">
+
+          <source media="(min-width: 1000px)" srcset="img/index/image-3-desktop.jpg">
+          <img src="img/index/image-3-mobile.jpg" alt="Полосатый кот" class="gallery__img gallery__img--3">
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="page-footer">
+      
+    </footer>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

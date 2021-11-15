@@ -1,0 +1,48 @@
+.options {
+  font-family: "PT Sans", "Arial", sans-serif;
+  list-style: none;
+  padding: 0;
+}
+
+.options__label {
+  position: relative;
+  padding-left: 34px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.options__input + .options__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.options__input + .options__label:hover::before {
+  border: 1px solid $basic-extra-light;
+}
+
+.options__input + .options__label:active::before {
+  border: 2px solid $blue-hover;
+}
+
+.options__input:checked + .options__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 15px;
+  height: 11px;
+  background-color: $basic-blue;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+  mask-image: url("../img/stack.svg#check");
+}

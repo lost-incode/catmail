@@ -1,0 +1,24 @@
+.info {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+.info__title {
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 42px;
+  line-height: 54px;
+}
+
+.info__subtitle {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 48px;
+  max-width: 330px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
+}

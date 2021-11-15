@@ -1,0 +1,53 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 34px;
+  margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 84px;
+    margin-bottom: 48px;
+  }
+}
+
+.page-header__logo {
+  position: relative;
+  font-size: 64px;
+  line-height: 83px;
+  color: $basic-black;
+  padding-left: 56px;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue-hover;
+  }
+
+  &:hover::before {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    color: $blue-active;
+  }
+
+  &:active::before {
+    background-color: $blue-active;
+  }
+}
+
+.page-header__logo::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 48px;
+  height: 42px;
+  background-color: $basic-black;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: 50% 50%;
+  mask-image: url("../img/stack.svg#paw");
+}
